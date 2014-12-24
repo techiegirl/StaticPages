@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Siddika Chowdhur's personal website">
+    <meta name="author" content="Siddika Chowdhurdhury (Lipna)">
+    <link rel="icon" href="images/favicon.ico">
+
+    <title>Siddika Chowdhurdhury (Lipna)</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function (){
+		function randomColor(){
+			return '#' + Math.random().toString(16).slice(2, 8); 
+		}
+		$("#button").on("click", function() {
+			$('body').css('background', randomColor());
+		});
+	});
+	</script>
+ <head>
+ <body id="random_background">
+	 <div id="click">
+		 <a id="button" href="javascript:void(0);">Click Me!</a>
+	 </div> 
+	 
+ </body>
